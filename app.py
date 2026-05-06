@@ -20,7 +20,7 @@ CORS(app, origins=ALLOWED_ORIGINS)
 socketio = SocketIO(
     app,
     cors_allowed_origins=ALLOWED_ORIGINS,
-    async_mode="eventlet",
+    async_mode="gevent",
     logger=False,
     engineio_logger=False
 )
